@@ -24,16 +24,16 @@
 #ifndef TINOBJ_LOADER_C_H_
 #define TINOBJ_LOADER_C_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #if defined(__WIN64)
 typedef unsigned long long my_size_t;
 #elif defined(__WIN32)
 typedef unsigned long my_size_t;
 #else
 typedef unsigned long my_size_t;
-#endif
-
-#ifdef __cplusplus
-extern "C" {
 #endif
 
 typedef struct {
