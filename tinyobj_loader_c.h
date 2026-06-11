@@ -28,10 +28,10 @@
 extern "C" {
 #endif
 
-#if defined(_WIN64)   
-  typedef unsigned long long tinyobj_size_t; /* Win64 uses data model LLP64 based */
-#else 
-  typedef unsigned long tinyobj_size_t;
+#if defined(_WIN64) /*  Win64 is LL64 compliant. */
+  typedef unsigned long long tinyobj_size_t;
+#else
+  typedef unsigned long tinyobj_size_t; 
 #endif
 
 typedef struct {
